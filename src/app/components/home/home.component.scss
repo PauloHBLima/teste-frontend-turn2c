@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+}
+
+.header {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  height: 56px;
+  width: 1366px;
+
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  color: white;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+select {
+  width: 186px;
+  height: 24px;
+  margin-left: 70px;
+  border-radius: 8px;
+  color: #000000;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  margin: 0px 5px;
+}
+
+p {
+  color: black;
+  font-family: monospace;
+  font-size: 14px;
+
+}
+
+.btn-perfil {
+  display: flex;
+  align-items: center;
+  width: 64px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #D9D9D9;
+  border: none;
+  margin-left: 1000px;
+}
+
+.img-perfil {
+  padding: 0px 2px;
+}
+
+.dogs {
+
+  &__container {
+    height: 664px;
+    width: 1366px;
+    background-color: #EEEEEE;
+  }
+
+  &__show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px;
+    width: 1220px;
+  }
+
+    &__article {
+border-radius: 16px;
+  }
+
+
+  &__list {
+    padding: 0px;
+    border-radius: 16px;
+    background-color: white;
+    transition: 0.3s all;
+    margin-left: 16px;
+    margin-top: 16px;
+
+    &:hover {
+      -webkit-box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.76);
+      box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.76);
+      transform: scale(1.1);
+      margin: 20px 30px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 230px;
+    height: 267px;
+    border: 16px;
+
+
+    img {
+      height: 200px;
+      text-align: center;
+      object-fit: contain;
+      border-radius: 16px 16px 0px 0px;
+    }
+  }
+  &__title__name__dog {
+
+    p {
+        font-family: monospace;
+        font-size: 16px;
+        line-height: 19.5px;
+        font-weight: 700;
+        margin: 0;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+  }
+  &__title__age__dog {
+
+    p {
+        font-family: monospace;
+        font-size: 12px;
+        line-height: 14.63px;
+        font-weight: 400;
+        margin: 0;
+        margin-left: 16px;
+    }
+  }
+
+}
