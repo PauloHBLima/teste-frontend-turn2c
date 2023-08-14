@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DogsApiService {
-  private BASE_URL: string = 'https://api.thecatapi.com/v1/images/search?limit=10';
-  private DEFAULT_LIMIT: number = 10;
+  private BASE_URL: string = 'https://api.thedogapi.com/v1/images/search?';
+  private DEFAULT_LIMIT: number = 8;
 
   constructor(private http: HttpClient) { }
 

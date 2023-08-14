@@ -3,7 +3,7 @@
     <p>Raça:</p>
     <li>
       <select name="dogs" id="dogs">
-        <option value="volvo">Todas</option>
+        <option>Todas</option>
       </select>
     </li>
     <li>
@@ -20,9 +20,9 @@
 <section class="dogs__container">
 
 <div class="dogs__show">
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -31,9 +31,9 @@
       </div>
     </div>
   </article>
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -42,9 +42,9 @@
       </div>
     </div>
   </article>
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -53,9 +53,9 @@
       </div>
     </div>
   </article>
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -64,9 +64,9 @@
       </div>
     </div>
   </article>
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -75,9 +75,9 @@
       </div>
     </div>
   </article>
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -86,9 +86,9 @@
       </div>
     </div>
   </article>
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -97,9 +97,9 @@
       </div>
     </div>
   </article>
-  <article class="dogs__list">
+  <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
-      <img src="/assets/dog.png" alt="">
+      <img [src]="dog.url">
       <div class="dogs__title__name__dog">
         <p>Chinook</p>
       </div>
@@ -108,6 +108,7 @@
       </div>
     </div>
   </article>
+
 </div>
 
   <div>

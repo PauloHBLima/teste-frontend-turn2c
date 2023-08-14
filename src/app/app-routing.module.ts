@@ -4,8 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},/*
-  {path: '/perfil', component: PerfilComponent} */
+  {path: '', component: HomeComponent},
+  /* {path: '/perfil', component: PerfilComponent} */
 ];
 
 @NgModule({

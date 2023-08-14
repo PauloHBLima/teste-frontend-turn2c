@@ -3,6 +3,9 @@ export interface IFakeDogs {
   url: string;
   width: number;
   height: number;
-  breeds: Array<string>;
+  breeds: [{
+    name: string;
+    life_span: number;
+  }];
   favourite: string;
 }

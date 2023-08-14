@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  name: string = 'Dogs';
 
   dogs: Array<IFakeDogs> = [];
 
