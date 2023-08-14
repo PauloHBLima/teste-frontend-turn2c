@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+}
+
+.header {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  height: 56px;
+  width: 1366px;
+
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  color: white;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+
+.btn-perfil {
+  display: flex;
+  align-items: center;
+  width: 64px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #D9D9D9;
+  border: none;
+  margin-left: 1230px;
+}
+
+.img-perfil {
+  padding: 0px 2px;
+}
+
+.container_principal {
+  display: flex;
+  height: 720px;
+}
+
+.container__dogs_add_image {
+  width: 850px;
+  display: flex;
+}
+
+.dogs {
+
+  &__container {
+    height: 452px;
+    width: 664px;
+    background-color: #EEEEEE;
+  }
+
+  &__show {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1230px;
+    height: 200px;
+    margin-top: 85px;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    align-items: center;
+    color: #000000;
+  }
+
+  &__article {
+    border-radius: 16px;
+  }
+
+
+  &__list {
+    padding: 0px;
+    border-radius: 16px;
+    background-color: white;
+    transition: 0.3s all;
+    margin-left: 16px;
+    margin-top: 16px;
+
+    &:hover {
+      -webkit-box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.76);
+      box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.76);
+      transform: scale(1.1);
+      margin: 20px 30px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 230px;
+    height: 200px;
+    border: 16px;
+
+
+    img {
+      height: 200px;
+      text-align: center;
+      object-fit: contain;
+      border-radius: 16px 16px 0px 0px;
+    }
+  }
+}
+
+.add {
+
+  &__container {
+    height: 664px;
+    width: 1366px;
+    background-color: #EEEEEE;
+  }
+
+  &__image_upload {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 452px;
+    height: 664px;
+    padding: 0;
+    background-color: white;
+  }
+
+  &__title_dogs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    margin-top: 109px;
+  }
+
+  &__dogs__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    width: 340px;
+    height: 340px;
+    border-radius: 16px;
+    background-color: #D9D9D9;
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.5px;
+      align-items: center;
+      color: #000000;
+    }
+
+    img {
+      width: 84px;
+      height: 74px;
+      margin-top: 105px;
+      text-align: center;
+      object-fit: contain;
+      border-radius: 16px 16px 0px 0px;
+    }
+  }
+}
+
+.btn__add__image {
+  background-color: #1AB0DF;
+  width: 337px;
+  height: 36px;
+  border-radius: 16px;
+  border-style: none;
+  margin-top: 135px;
+}
+
+.my-images {
+  position: absolute;
+  margin-left: 74px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.26px;
+  color: #000000;
+}

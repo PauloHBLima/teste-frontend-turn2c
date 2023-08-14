@@ -33,7 +33,7 @@ select {
   margin-left: 70px;
   border-radius: 8px;
   color: #000000;
-  font-family: monospace;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.63px;
@@ -42,7 +42,7 @@ select {
 
 p {
   color: black;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 
 }
@@ -75,12 +75,11 @@ p {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 24px;
     width: 1220px;
   }
 
-    &__article {
-border-radius: 16px;
+  &__article {
+    border-radius: 16px;
   }
 
 
@@ -116,28 +115,70 @@ border-radius: 16px;
       border-radius: 16px 16px 0px 0px;
     }
   }
+
   &__title__name__dog {
 
     p {
-        font-family: monospace;
-        font-size: 16px;
-        line-height: 19.5px;
-        font-weight: 700;
-        margin: 0;
-        margin-top: 16px;
-        margin-left: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 19.5px;
+      font-weight: 700;
+      margin: 0;
+      margin-top: 16px;
+      margin-left: 16px;
     }
   }
+
   &__title__age__dog {
 
     p {
-        font-family: monospace;
-        font-size: 12px;
-        line-height: 14.63px;
-        font-weight: 400;
-        margin: 0;
-        margin-left: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      line-height: 14.63px;
+      font-weight: 400;
+      margin: 0;
+      margin-left: 16px;
     }
   }
 
+}
+
+.btn {
+
+  &__avançar__voltar {
+
+    display: flex;
+    background-color: #FFFFFF;
+    width: 81px;
+    height: 40px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* margin-left: 1025px; */
+  &__p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 400;
+    margin-right: 8px;
+    margin-left: 913px
+  }
+
+  &__img {
+    background-size: cover;
+    width: 15px;
+    height: 24px;
+    color: #222222;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  &__button {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 13px;
+  }
 }
