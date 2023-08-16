@@ -7,13 +7,15 @@
   display: flex;
 }
 
+.bg-white {
+  background-color: #FFFFFF;
+}
+
 nav {
   display: flex;
   align-items: center;
-  background-color: #FFFFFF;
   height: 56px;
   width: 1366px;
-
 }
 
 ul {

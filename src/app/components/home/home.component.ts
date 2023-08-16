@@ -1,3 +1,4 @@
+import { LimitParams } from './../../services/types/DogsParams.type';
 import { DogsApiService } from './../../services/dogs-api.service';
 import { Component, OnInit } from '@angular/core';
 import { IFakeDogs } from '../interfaces/FakeDogs.interface';
@@ -9,18 +10,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  name: string = 'Dogs';
 
-  dogs: Array<IFakeDogs> = [];
+
+  name: string = 'Dogs';
+  page = 1;
+  dogs: IFakeDogs[] = [];
 
   constructor(private dogsApiService: DogsApiService, private router: Router) {}
   ngOnInit(): void {
-    this.getDogs();
+    this.getDogs(
+      this.page,
+      8,
+      'DESC'
+    );
+
   }
 
-  getDogs() {
+  getDogs(page: number, limit: number, order: LimitParams) {
 
-    this.dogsApiService.findAll(8, "DESC").subscribe({
+    this.dogsApiService.findAll(page, limit, order ).subscribe({
       next: (response) => {
         this.dogs = response;
       },
@@ -30,4 +38,10 @@ export class HomeComponent implements OnInit {
       complete: () => console.log('[COMPLETE]: Requisição concluida com sucesso'),
     })
   }
+
+nextPage() {
+  this.page++;
+  this.getDogs(this.page, 8, 'DESC')
+}
+
 }

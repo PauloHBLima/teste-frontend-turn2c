@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
+  imagePhoto = "../../../assets/camera.png";
+
 ngOnInit(): void {
 
 }

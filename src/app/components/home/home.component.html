@@ -1,126 +1,49 @@
-<nav>
-  <ul>
-    <p>Raça:</p>
-    <li>
-      <select name="dogs" id="dogs">
-        <option>Todas</option>
-      </select>
-    </li>
-    <li>
-     <!--  [routerLink]="['/perfil']" -->
-      <a>
-        <button class="btn-perfil">
-          <img class="img-perfil" src="/assets/perfil.png" alt="">
-          Perfil
-        </button>
-      </a>
-    </li>
-  </ul>
-</nav>
-<section class="dogs__container">
+<div class="bg-white">
+  <nav class="container bg-white">
+    <ul>
+      <p>Raça:</p>
+      <li>
+        <select name="dogs" id="dogs">
+          <option>Todas</option>
+        </select>
+      </li>
+      <li>
+          <a class="btn-perfil" [routerLink]="['/perfil']">
+            <img class="img-perfil" src="../../../assets/images/perfil.png" alt="perfil">
+            Perfil
+          </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<section class="dogs__container container" >
 
 <div class="dogs__show">
   <article class="dogs__list" *ngFor="let dog of dogs">
     <div class="dogs__card">
       <img [src]="dog.url">
       <div class="dogs__title__name__dog">
-        <p>Chinook</p>
+        <p>./breeds</p>
       </div>
       <div class="dogs__title__age__dog">
         <p>12 - 15 anos</p>
       </div>
     </div>
   </article>
-  <article class="dogs__list" *ngFor="let dog of dogs">
-    <div class="dogs__card">
-      <img [src]="dog.url">
-      <div class="dogs__title__name__dog">
-        <p>Chinook</p>
-      </div>
-      <div class="dogs__title__age__dog">
-        <p>12 - 15 anos</p>
-      </div>
-    </div>
-  </article>
-  <article class="dogs__list" *ngFor="let dog of dogs">
-    <div class="dogs__card">
-      <img [src]="dog.url">
-      <div class="dogs__title__name__dog">
-        <p>Chinook</p>
-      </div>
-      <div class="dogs__title__age__dog">
-        <p>12 - 15 anos</p>
-      </div>
-    </div>
-  </article>
-  <article class="dogs__list" *ngFor="let dog of dogs">
-    <div class="dogs__card">
-      <img [src]="dog.url">
-      <div class="dogs__title__name__dog">
-        <p>Chinook</p>
-      </div>
-      <div class="dogs__title__age__dog">
-        <p>12 - 15 anos</p>
-      </div>
-    </div>
-  </article>
-  <article class="dogs__list" *ngFor="let dog of dogs">
-    <div class="dogs__card">
-      <img [src]="dog.url">
-      <div class="dogs__title__name__dog">
-        <p>Chinook</p>
-      </div>
-      <div class="dogs__title__age__dog">
-        <p>12 - 15 anos</p>
-      </div>
-    </div>
-  </article>
-  <article class="dogs__list" *ngFor="let dog of dogs">
-    <div class="dogs__card">
-      <img [src]="dog.url">
-      <div class="dogs__title__name__dog">
-        <p>Chinook</p>
-      </div>
-      <div class="dogs__title__age__dog">
-        <p>12 - 15 anos</p>
-      </div>
-    </div>
-  </article>
-  <article class="dogs__list" *ngFor="let dog of dogs">
-    <div class="dogs__card">
-      <img [src]="dog.url">
-      <div class="dogs__title__name__dog">
-        <p>Chinook</p>
-      </div>
-      <div class="dogs__title__age__dog">
-        <p>12 - 15 anos</p>
-      </div>
-    </div>
-  </article>
-  <article class="dogs__list" *ngFor="let dog of dogs">
-    <div class="dogs__card">
-      <img [src]="dog.url">
-      <div class="dogs__title__name__dog">
-        <p>Chinook</p>
-      </div>
-      <div class="dogs__title__age__dog">
-        <p>12 - 15 anos</p>
-      </div>
-    </div>
-  </article>
+
 
 </div>
 
   <div>
     <ul>
       <li>
-        <p class="btn__p">Página: 1</p>
+        <p class="btn__p">Página: {{page}}</p>
       </li>
       <li>
         <div class="btn__avançar__voltar">
         <button class="btn__button"><img class="btn__img" src="/assets/setaesquerda.png" alt=""></button>
         <img src="/assets//Line.png" alt="">
-        <button class="btn__button"><img class="btn__img" src="/assets/setadireita.png" alt=""></button>
+        <button class="btn__button" (click)="nextPage()"><img class="btn__img" src="/assets/setadireita.png" alt=""></button>
     </div>
   </li>
     </ul>
