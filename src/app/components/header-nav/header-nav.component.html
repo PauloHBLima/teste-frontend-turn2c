@@ -9,17 +9,15 @@
         </select>
       </li>
       <li *ngIf="showPerfil" (click)="handleTradeNav()">
-        <a class="btn-perfil" [routerLink]="['/perfil']"> <img class="img-perfil" src="assets/images/perfil.png" alt="">
+        <a class="btn-perfil" [routerLink]="['/perfil']"> <fa-icon class="img-perfil" [icon]="faUser"></fa-icon>
           Perfil
         </a>
       </li>
       <ng-template #ngHome>
-        <li *ngIf="showHome" >
-          <a class="btn-perfil" [routerLink]="['/']"><img class="img-perfil" src="/assets/home.png" alt="">Home</a>
+        <li *ngIf="showHome">
+          <a class="btn-perfil" [routerLink]="['/']"> <fa-icon class="img-perfil" [icon]="faHouse"></fa-icon>>Home</a>
         </li>
       </ng-template>
     </ul>
   </nav>
 </div>
-
-

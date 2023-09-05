@@ -3,6 +3,7 @@ import { DogsApiService } from './../../services/dogs-api.service';
 import { Component, OnInit } from '@angular/core';
 import { IFakeDogs } from '../interfaces/FakeDogs.interface';
 import { Router } from '@angular/router';
+import {  faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -11,10 +12,11 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  
   name: string = 'Dogs';
   page = 1;
   dogs: IFakeDogs[] = [];
+  faAngleRight = faAngleRight;
+  faAngleLeft = faAngleLeft;
 
   constructor(private dogsApiService: DogsApiService, private router: Router) {}
   ngOnInit(): void {

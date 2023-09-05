@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-perfil',
@@ -7,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
-  imagePhoto = "../../../assets/camera.png";
-
+  faCameraRetro = faCameraRetro;
 ngOnInit(): void {
 
 }
